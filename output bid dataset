@@ -1,0 +1,295 @@
+ubuntu@ip-172-31-21-142:~/hadoop$ bin/hadoop dfs -ls /home/ubuntu/data2
+Found 1 items
+-rw-r--r--  16 ubuntu supergroup 10400000000 2014-10-23 16:50 /home/ubuntu/data2/wiki10gb
+ubuntu@ip-172-31-21-142:~/hadoop$ bin/hadoop jar hadoop*examples*.jar wordcount /home/ubuntu/data2 /home/ubuntu/output2
+14/10/23 16:56:01 INFO input.FileInputFormat: Total input paths to process : 1
+14/10/23 16:56:01 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+14/10/23 16:56:01 WARN snappy.LoadSnappy: Snappy native library not loaded
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:0+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:67108864+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:134217728+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:201326592+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:268435456+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:335544320+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:402653184+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:469762048+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:536870912+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:603979776+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:671088640+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:738197504+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:805306368+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:872415232+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:939524096+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1006632960+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1073741824+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1140850688+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1207959552+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1275068416+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1342177280+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1409286144+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1476395008+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1543503872+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1610612736+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1677721600+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1744830464+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1811939328+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1879048192+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:1946157056+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2013265920+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2080374784+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2147483648+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2214592512+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2281701376+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2348810240+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2415919104+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2483027968+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2550136832+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2617245696+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2684354560+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2751463424+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2818572288+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2885681152+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:2952790016+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3019898880+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3087007744+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3154116608+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3221225472+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3288334336+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3355443200+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3422552064+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3489660928+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3556769792+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3623878656+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3690987520+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3758096384+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3825205248+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3892314112+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:3959422976+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4026531840+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4093640704+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4160749568+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4227858432+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4294967296+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4362076160+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4429185024+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4496293888+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4563402752+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4630511616+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4697620480+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4764729344+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4831838208+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4898947072+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:4966055936+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5033164800+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5100273664+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5167382528+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5234491392+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5301600256+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5368709120+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5435817984+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5502926848+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5570035712+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5637144576+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5704253440+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5771362304+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5838471168+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5905580032+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:5972688896+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6039797760+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6106906624+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6174015488+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6241124352+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6308233216+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6375342080+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6442450944+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6509559808+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6576668672+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6643777536+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6710886400+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6777995264+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6845104128+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6912212992+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:6979321856+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7046430720+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7113539584+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7180648448+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7247757312+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7314866176+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7381975040+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7449083904+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7516192768+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7583301632+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7650410496+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7717519360+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7784628224+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7851737088+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7918845952+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:7985954816+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8053063680+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8120172544+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8187281408+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8254390272+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8321499136+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8388608000+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8455716864+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8522825728+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8589934592+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8657043456+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8724152320+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8791261184+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8858370048+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8925478912+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:8992587776+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9059696640+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9126805504+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9193914368+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9261023232+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9328132096+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9395240960+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9462349824+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9529458688+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9596567552+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9663676416+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9730785280+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9797894144+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9865003008+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9932111872+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:9999220736+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:10066329600+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:10133438464+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:10200547328+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:10267656192+67108864 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data2/wiki10gb:10334765056+65234944 splitsize: 16 maxsize: 10
+14/10/23 16:56:01 INFO mapred.JobClient: Running job: job_201410231557_0003
+14/10/23 16:56:02 INFO mapred.JobClient:  map 0% reduce 0%
+14/10/23 16:56:15 INFO mapred.JobClient:  map 2% reduce 0%
+14/10/23 16:56:17 INFO mapred.JobClient:  map 3% reduce 0%
+14/10/23 16:56:18 INFO mapred.JobClient:  map 5% reduce 0%
+14/10/23 16:56:20 INFO mapred.JobClient:  map 6% reduce 0%
+14/10/23 16:56:21 INFO mapred.JobClient:  map 8% reduce 0%
+14/10/23 16:56:23 INFO mapred.JobClient:  map 9% reduce 0%
+14/10/23 16:56:24 INFO mapred.JobClient:  map 12% reduce 0%
+14/10/23 16:56:27 INFO mapred.JobClient:  map 15% reduce 0%
+14/10/23 16:56:30 INFO mapred.JobClient:  map 18% reduce 0%
+14/10/23 16:56:32 INFO mapred.JobClient:  map 19% reduce 0%
+14/10/23 16:56:33 INFO mapred.JobClient:  map 20% reduce 0%
+14/10/23 16:56:41 INFO mapred.JobClient:  map 21% reduce 0%
+14/10/23 16:56:42 INFO mapred.JobClient:  map 22% reduce 0%
+14/10/23 16:56:43 INFO mapred.JobClient:  map 23% reduce 0%
+14/10/23 16:56:44 INFO mapred.JobClient:  map 24% reduce 0%
+14/10/23 16:56:45 INFO mapred.JobClient:  map 25% reduce 0%
+14/10/23 16:56:46 INFO mapred.JobClient:  map 26% reduce 0%
+14/10/23 16:56:47 INFO mapred.JobClient:  map 28% reduce 6%
+14/10/23 16:56:49 INFO mapred.JobClient:  map 30% reduce 6%
+14/10/23 16:56:50 INFO mapred.JobClient:  map 31% reduce 6%
+14/10/23 16:56:51 INFO mapred.JobClient:  map 32% reduce 6%
+14/10/23 16:56:52 INFO mapred.JobClient:  map 33% reduce 6%
+14/10/23 16:56:53 INFO mapred.JobClient:  map 34% reduce 6%
+14/10/23 16:56:54 INFO mapred.JobClient:  map 35% reduce 6%
+14/10/23 16:56:55 INFO mapred.JobClient:  map 36% reduce 6%
+14/10/23 16:56:56 INFO mapred.JobClient:  map 37% reduce 6%
+14/10/23 16:56:57 INFO mapred.JobClient:  map 38% reduce 6%
+14/10/23 16:56:58 INFO mapred.JobClient:  map 39% reduce 6%
+14/10/23 16:56:59 INFO mapred.JobClient:  map 40% reduce 6%
+14/10/23 16:57:01 INFO mapred.JobClient:  map 41% reduce 6%
+14/10/23 16:57:05 INFO mapred.JobClient:  map 41% reduce 12%
+14/10/23 16:57:06 INFO mapred.JobClient:  map 42% reduce 12%
+14/10/23 16:57:08 INFO mapred.JobClient:  map 43% reduce 13%
+14/10/23 16:57:09 INFO mapred.JobClient:  map 44% reduce 13%
+14/10/23 16:57:10 INFO mapred.JobClient:  map 45% reduce 13%
+14/10/23 16:57:11 INFO mapred.JobClient:  map 46% reduce 13%
+14/10/23 16:57:12 INFO mapred.JobClient:  map 47% reduce 13%
+14/10/23 16:57:13 INFO mapred.JobClient:  map 48% reduce 13%
+14/10/23 16:57:14 INFO mapred.JobClient:  map 49% reduce 13%
+14/10/23 16:57:15 INFO mapred.JobClient:  map 50% reduce 13%
+14/10/23 16:57:16 INFO mapred.JobClient:  map 51% reduce 13%
+14/10/23 16:57:17 INFO mapred.JobClient:  map 52% reduce 13%
+14/10/23 16:57:18 INFO mapred.JobClient:  map 53% reduce 13%
+14/10/23 16:57:19 INFO mapred.JobClient:  map 54% reduce 13%
+14/10/23 16:57:20 INFO mapred.JobClient:  map 55% reduce 13%
+14/10/23 16:57:21 INFO mapred.JobClient:  map 56% reduce 13%
+14/10/23 16:57:22 INFO mapred.JobClient:  map 57% reduce 13%
+14/10/23 16:57:23 INFO mapred.JobClient:  map 58% reduce 13%
+14/10/23 16:57:24 INFO mapred.JobClient:  map 59% reduce 13%
+14/10/23 16:57:25 INFO mapred.JobClient:  map 60% reduce 13%
+14/10/23 16:57:27 INFO mapred.JobClient:  map 61% reduce 13%
+14/10/23 16:57:29 INFO mapred.JobClient:  map 61% reduce 16%
+14/10/23 16:57:31 INFO mapred.JobClient:  map 62% reduce 16%
+14/10/23 16:57:33 INFO mapred.JobClient:  map 63% reduce 16%
+14/10/23 16:57:35 INFO mapred.JobClient:  map 64% reduce 20%
+14/10/23 16:57:36 INFO mapred.JobClient:  map 65% reduce 20%
+14/10/23 16:57:37 INFO mapred.JobClient:  map 66% reduce 20%
+14/10/23 16:57:38 INFO mapred.JobClient:  map 67% reduce 20%
+14/10/23 16:57:39 INFO mapred.JobClient:  map 68% reduce 20%
+14/10/23 16:57:40 INFO mapred.JobClient:  map 69% reduce 20%
+14/10/23 16:57:41 INFO mapred.JobClient:  map 70% reduce 20%
+14/10/23 16:57:42 INFO mapred.JobClient:  map 72% reduce 20%
+14/10/23 16:57:43 INFO mapred.JobClient:  map 73% reduce 20%
+14/10/23 16:57:44 INFO mapred.JobClient:  map 74% reduce 20%
+14/10/23 16:57:45 INFO mapred.JobClient:  map 75% reduce 20%
+14/10/23 16:57:46 INFO mapred.JobClient:  map 76% reduce 20%
+14/10/23 16:57:47 INFO mapred.JobClient:  map 77% reduce 20%
+14/10/23 16:57:48 INFO mapred.JobClient:  map 78% reduce 20%
+14/10/23 16:57:49 INFO mapred.JobClient:  map 79% reduce 20%
+14/10/23 16:57:51 INFO mapred.JobClient:  map 80% reduce 20%
+14/10/23 16:57:52 INFO mapred.JobClient:  map 81% reduce 20%
+14/10/23 16:57:54 INFO mapred.JobClient:  map 81% reduce 25%
+14/10/23 16:57:55 INFO mapred.JobClient:  map 82% reduce 25%
+14/10/23 16:57:57 INFO mapred.JobClient:  map 83% reduce 25%
+14/10/23 16:57:59 INFO mapred.JobClient:  map 84% reduce 25%
+14/10/23 16:58:00 INFO mapred.JobClient:  map 85% reduce 25%
+14/10/23 16:58:01 INFO mapred.JobClient:  map 86% reduce 25%
+14/10/23 16:58:02 INFO mapred.JobClient:  map 87% reduce 25%
+14/10/23 16:58:03 INFO mapred.JobClient:  map 87% reduce 27%
+14/10/23 16:58:04 INFO mapred.JobClient:  map 88% reduce 27%
+14/10/23 16:58:05 INFO mapred.JobClient:  map 89% reduce 27%
+14/10/23 16:58:06 INFO mapred.JobClient:  map 90% reduce 27%
+14/10/23 16:58:07 INFO mapred.JobClient:  map 91% reduce 27%
+14/10/23 16:58:08 INFO mapred.JobClient:  map 92% reduce 27%
+14/10/23 16:58:10 INFO mapred.JobClient:  map 94% reduce 27%
+14/10/23 16:58:12 INFO mapred.JobClient:  map 95% reduce 27%
+14/10/23 16:58:13 INFO mapred.JobClient:  map 96% reduce 27%
+14/10/23 16:58:14 INFO mapred.JobClient:  map 97% reduce 27%
+14/10/23 16:58:15 INFO mapred.JobClient:  map 98% reduce 27%
+14/10/23 16:58:18 INFO mapred.JobClient:  map 99% reduce 27%
+14/10/23 16:58:21 INFO mapred.JobClient:  map 100% reduce 27%
+14/10/23 16:58:24 INFO mapred.JobClient:  map 100% reduce 31%
+14/10/23 16:58:30 INFO mapred.JobClient:  map 100% reduce 85%
+14/10/23 16:58:32 INFO mapred.JobClient:  map 100% reduce 100%
+14/10/23 16:58:33 INFO mapred.JobClient: Job complete: job_201410231557_0003
+14/10/23 16:58:33 INFO mapred.JobClient: Counters: 30
+14/10/23 16:58:33 INFO mapred.JobClient:   Job Counters 
+14/10/23 16:58:33 INFO mapred.JobClient:     Launched reduce tasks=1
+14/10/23 16:58:33 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=4109618
+14/10/23 16:58:33 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+14/10/23 16:58:33 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+14/10/23 16:58:33 INFO mapred.JobClient:     Rack-local map tasks=2
+14/10/23 16:58:33 INFO mapred.JobClient:     Launched map tasks=172
+14/10/23 16:58:33 INFO mapred.JobClient:     Data-local map tasks=170
+14/10/23 16:58:33 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=119723
+14/10/23 16:58:33 INFO mapred.JobClient:   File Output Format Counters 
+14/10/23 16:58:33 INFO mapred.JobClient:     Bytes Written=83987906
+14/10/23 16:58:33 INFO mapred.JobClient:   FileSystemCounters
+14/10/23 16:58:33 INFO mapred.JobClient:     FILE_BYTES_READ=829765326
+14/10/23 16:58:33 INFO mapred.JobClient:     HDFS_BYTES_READ=10400658440
+14/10/23 16:58:33 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=994523894
+14/10/23 16:58:33 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=83987906
+14/10/23 16:58:33 INFO mapred.JobClient:   File Input Format Counters 
+14/10/23 16:58:33 INFO mapred.JobClient:     Bytes Read=10400634880
+14/10/23 16:58:33 INFO mapred.JobClient:   Map-Reduce Framework
+14/10/23 16:58:33 INFO mapred.JobClient:     Map output materialized bytes=155929195
+14/10/23 16:58:33 INFO mapred.JobClient:     Map input records=123015884
+14/10/23 16:58:33 INFO mapred.JobClient:     Reduce shuffle bytes=155929195
+14/10/23 16:58:33 INFO mapred.JobClient:     Spilled Records=55283059
+14/10/23 16:58:33 INFO mapred.JobClient:     Map output bytes=15858375070
+14/10/23 16:58:33 INFO mapred.JobClient:     Total committed heap usage (bytes)=28038397952
+14/10/23 16:58:33 INFO mapred.JobClient:     CPU time spent (ms)=3583240
+14/10/23 16:58:33 INFO mapred.JobClient:     Combine input records=1543984399
+14/10/23 16:58:33 INFO mapred.JobClient:     SPLIT_RAW_BYTES=23560
+14/10/23 16:58:33 INFO mapred.JobClient:     Reduce input records=5463563
+14/10/23 16:58:33 INFO mapred.JobClient:     Reduce input groups=3757036
+14/10/23 16:58:33 INFO mapred.JobClient:     Combine output records=33897301
+14/10/23 16:58:33 INFO mapred.JobClient:     Physical memory (bytes) snapshot=34555453440
+14/10/23 16:58:33 INFO mapred.JobClient:     Reduce output records=3757036
+14/10/23 16:58:33 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=104410644480
+14/10/23 16:58:33 INFO mapred.JobClient:     Map output records=1515550661

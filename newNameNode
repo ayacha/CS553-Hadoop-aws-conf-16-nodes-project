@@ -1,0 +1,4 @@
+
+
+sudo sed -i '/configuration/d' /home/ubuntu/hadoop/conf/core-site.xml
+echo "<configuration><property><name>fs.default.name</name><value>hdfs://ec2-54-191-140-160.us-west-2.compute.amazonaws.com:8020</value></property><property><name>hadoop.tmp.dir</name><value>/home/ubuntu/hdfstmp</value></property></configuration>" | sudo tee -a /home/ubuntu/hadoop/conf/core-site.xml

@@ -1,0 +1,49 @@
+ubuntu@ip-172-31-21-142:~/hadoop$ bin/hadoop dfs -ls /home/ubuntu/data
+Found 1 items
+-rw-r--r--  16 ubuntu supergroup    1100000 2014-10-23 16:09 /home/ubuntu/data/small-dataset
+ubuntu@ip-172-31-21-142:~/hadoop$ bin/hadoop jar hadoop*examples*.jar wordcount /home/ubuntu/data /home/ubuntu/output1
+14/10/23 16:10:44 INFO input.FileInputFormat: Total input paths to process : 1
+14/10/23 16:10:44 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+14/10/23 16:10:44 WARN snappy.LoadSnappy: Snappy native library not loaded
+14/10/23 16:10:44 WARN split.JobSplitWriter: Max block location exceeded for split: hdfs://ec2-54-191-53-96.us-west-2.compute.amazonaws.com:8020/home/ubuntu/data/small-dataset:0+1100000 splitsize: 16 maxsize: 10
+14/10/23 16:10:44 INFO mapred.JobClient: Running job: job_201410231557_0002
+14/10/23 16:10:45 INFO mapred.JobClient:  map 0% reduce 0%
+14/10/23 16:10:51 INFO mapred.JobClient:  map 100% reduce 0%
+14/10/23 16:10:58 INFO mapred.JobClient:  map 100% reduce 33%
+14/10/23 16:11:00 INFO mapred.JobClient:  map 100% reduce 100%
+14/10/23 16:11:01 INFO mapred.JobClient: Job complete: job_201410231557_0002
+14/10/23 16:11:01 INFO mapred.JobClient: Counters: 29
+14/10/23 16:11:01 INFO mapred.JobClient:   Job Counters 
+14/10/23 16:11:01 INFO mapred.JobClient:     Launched reduce tasks=1
+14/10/23 16:11:01 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=5934
+14/10/23 16:11:01 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+14/10/23 16:11:01 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+14/10/23 16:11:01 INFO mapred.JobClient:     Rack-local map tasks=1
+14/10/23 16:11:01 INFO mapred.JobClient:     Launched map tasks=1
+14/10/23 16:11:01 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=8896
+14/10/23 16:11:01 INFO mapred.JobClient:   File Output Format Counters 
+14/10/23 16:11:01 INFO mapred.JobClient:     Bytes Written=24521
+14/10/23 16:11:01 INFO mapred.JobClient:   FileSystemCounters
+14/10/23 16:11:01 INFO mapred.JobClient:     FILE_BYTES_READ=30598
+14/10/23 16:11:01 INFO mapred.JobClient:     HDFS_BYTES_READ=1100156
+14/10/23 16:11:01 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=174271
+14/10/23 16:11:01 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=24521
+14/10/23 16:11:01 INFO mapred.JobClient:   File Input Format Counters 
+14/10/23 16:11:01 INFO mapred.JobClient:     Bytes Read=1100000
+14/10/23 16:11:01 INFO mapred.JobClient:   Map-Reduce Framework
+14/10/23 16:11:01 INFO mapred.JobClient:     Map output materialized bytes=30598
+14/10/23 16:11:01 INFO mapred.JobClient:     Map input records=10704
+14/10/23 16:11:01 INFO mapred.JobClient:     Reduce shuffle bytes=30598
+14/10/23 16:11:01 INFO mapred.JobClient:     Spilled Records=3728
+14/10/23 16:11:01 INFO mapred.JobClient:     Map output bytes=1700352
+14/10/23 16:11:01 INFO mapred.JobClient:     Total committed heap usage (bytes)=232783872
+14/10/23 16:11:01 INFO mapred.JobClient:     CPU time spent (ms)=3570
+14/10/23 16:11:01 INFO mapred.JobClient:     Combine input records=167372
+14/10/23 16:11:01 INFO mapred.JobClient:     SPLIT_RAW_BYTES=156
+14/10/23 16:11:01 INFO mapred.JobClient:     Reduce input records=1864
+14/10/23 16:11:01 INFO mapred.JobClient:     Reduce input groups=1864
+14/10/23 16:11:01 INFO mapred.JobClient:     Combine output records=1864
+14/10/23 16:11:01 INFO mapred.JobClient:     Physical memory (bytes) snapshot=295571456
+14/10/23 16:11:01 INFO mapred.JobClient:     Reduce output records=1864
+14/10/23 16:11:01 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=1347850240
+14/10/23 16:11:01 INFO mapred.JobClient:     Map output records=167372
