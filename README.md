@@ -6,6 +6,7 @@ The goal of this programming assignment is to enable you to gain experience prog
 - The Swift parallel programming system (http://swift-lang.org/main/)
 
 This programming assignment covers the WordCount application implemented in 3 different ways: Java, Hadoop, and Swift. This assignment will be broken down into eight parts:
+
 1) Virtual Cluster (1-node): Setuping virtual cluster of 1 node on Amazon EC2
 
 2) Shared-Memory WordCount: Implementing the Shared-Memory WordCount application in a Java (without using Hadoop or Swift) and measuring its performance on 1 node on a c3.large instance (from here on, this will be called Share-Memory WordCount); 
