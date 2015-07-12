@@ -26,3 +26,9 @@ from 1 node to 16 nodes.
 7) Swift WordCount: Implementing the Swift WordCount application, and evaluating its performance on 1 node and 16 nodes. It is also able to do strong scaling experiments from 1 node to 16 nodes.
 
 8) Performance: Comparing the performance of the three versions of WordCount (Shared- Memory, Hadoop, and Swift)) on 1 node scale and explaining observations; comparing the Shared- Memory performance of 1 node to Hadoop and Swift WordCount at 16 node scales and explaining the observations.
+
+# Instructions
+
+The repository contains Wordcount configuration for EC2 Ubuntu instances implemented in Shell scripts
+
+You need to change the ssh key and the IPs to match what you have for your instances
